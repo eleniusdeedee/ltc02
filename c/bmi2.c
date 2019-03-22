@@ -22,7 +22,7 @@ int main() {
 
 
     float bmi = bmicalculation(height, weight);
-    printf("Your BMI is %.1f \n", bmi);
+    printf("Your BMI is %.2f \n", bmi);
 
     if (bmi < 18.5) 
     {
