@@ -6,7 +6,7 @@ function isitapalindrome(a){
         return true;
     }
 
-    else if (a[0] == a.substring(l-1,l)) {
+    else if (a[0] == a[l-1]) {
 //       console.log (a[0])
 //       console.log (a.substring (l-1,l))
 //      console.log (a.substring(1, l-1))
