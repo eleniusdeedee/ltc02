@@ -1,34 +1,37 @@
 
 function isitapalindrome(a){
-	let l = a.length
+    let l = a.length
 	if (l == 0 || l == 1){
+//        console.log ("это вырожденный случай")
         return true;
     }
 
     else if (a[0] == a.substring(l-1,l)) {
-//        console.log (a[0])
-//        console.log (a.substring (l-1,l))
-        isitapalindrome (a.substring(1,a.length-2))
-        return true
+//       console.log (a[0])
+//       console.log (a.substring (l-1,l))
+//      console.log (a.substring(1, l-1))
+        return isitapalindrome (a.substring(1,l-1))
+        
+        
     }
-    else 
+    else {
  //       console.log (a[0])
  //       console.log (a.substring(l-1,l))
- //       console.log ('ну что поделать!')
+        console.log ('нe похоже на палиндром\n')
         return false
+    }
 }
 
-let u = "abbdhkalsalalad"
-let w = "anutforajaroftuna"
-let x = "abcdcba"
-let y = "madamimadam"
-let z = "neveroddoreven"
+let u = "abcdsba"
 
+//let w = "anutforajaroftuna"
+//let x = "abcdcba"
+//let y = "madamimadam"
+//let z = "neveroddoreven"
 
-
-console.log (u + " " + isitapalindrome(u) + " \n ")
-console.log (w + " " + isitapalindrome(w) + " \n ")
-console.log (x + " " + isitapalindrome(x) + " \n ")
-console.log (y + " " + isitapalindrome(y) + " \n ")
-console.log (z + " " + isitapalindrome(z) + "\n ")
+console.log (u  + " " + isitapalindrome(u) + " \n ")
+//console.log (w + " " + isitapalindrome(w) + " \n ")
+//console.log (x + " " + isitapalindrome(x) + " \n ")
+//console.log (y + " " + isitapalindrome(y) + " \n ")
+//console.log (z + " " + isitapalindrome(z) + "\n ")
  
